@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Boilerplate</title>
+    <link rel="stylesheet" href="form-style.css">
+    <link rel="stylesheet" href="deadpool-style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <h1>Welcome</h1>
+
+        <form class="form">
+            <input id="name" type="text" placeholder="Username">
+            <input id="password" type="password" placeholder="Password">
+            <textarea id="text" placeholder="WHAT? I am placeholder" cols="80" rows="5"></textarea>
+            <button type="submit" id="login-button">Login</button>
+        </form>
+    </div>
+
+</div>
+<script src='../src/jquery.js'></script>
+<script src="../src/jquery.deadpool.js"></script>
+<script>
+    jQuery('#text').deadPool();
+</script>
+</body>
+</html>
